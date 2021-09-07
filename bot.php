@@ -6,7 +6,7 @@
 
 error_reporting(0);
 
-define('BOT_TOKEN', 'GANTI SINI'); // GANTI SINI 
+define('BOT_TOKEN', 'Yokai69Bot'); // GANTI SINI 
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function exec_curl_request($handle) {
@@ -94,7 +94,7 @@ function getUpdates($last_id = null){
 }
 function printUpdates($result){
 foreach($result as $obj){
-$botToken ="GANTI SINI"; // GANTI SINI
+$botToken ="Yokai69Bot"; // GANTI SINI
 $website = "https://api.telegram.org/bot".$botToken;
 $update = file_get_contents($website."/getupdates");
 $json = json_decode($update, TRUE);
